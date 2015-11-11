@@ -42,6 +42,7 @@ $route['default_controller'] = "Home";
 $route['404_override'] = '';
 #$route['articulo/(:num)/:any'] = 'home/detalle_articulo/$1';
 $route['articulo/(:any)'] = 'home/detalle_articulo/$1';
+$route['calendario'] = 'home/calendario';
 $route['productos'] = 'productos/lista_productos';
 $route['carrito'] = 'productos/mostrar_carrito';
 

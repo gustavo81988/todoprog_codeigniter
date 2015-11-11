@@ -15,10 +15,10 @@
         <nav>
             <section class="contenedor">
                 <ul>
-                    <li><a href="<?= base_url();?>">Inicio</a></li>
-                    <li><a href="productos">Productos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Nosotros</a></li>
+                    <li><?= anchor(base_url(),'Inicio')?></li>
+                    <li><?= anchor('productos','Productos')?></li>
+                    <li><?= anchor('calendario','Calendario')?></li>
+                    <li><?= anchor('encriptacion','Encriptación')?></li>
                 </ul>
             </section>
         </nav>
