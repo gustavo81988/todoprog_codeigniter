@@ -49,5 +49,24 @@ class Home extends CI_Controller {
         $this->load->view('templates/frontend/template', $datos);
         
     }
+    
+    function encriptacion(){
+        
+        $this->load->library('encrypt');
+        $key = 'super-secret-key';
+        
+        
+        $datos['msj'] = "Este es un mensaje para cifrar";
+        $datos['valor_encriptado']= $this->encrypt->encode($datos['msj'],$key);
+        $datos['valor_desencriptado']= $this->encrypt->decode($datos['valor_encriptado'],$key);
+        $datos['valor_sha1']= $this->encrypt->sha1($datos['msj']);
+        $datos['valor_md5']= md5($datos['msj']);
+
+        
+        $datos['titulo'] = "Encriptación con Code Igniter";
+        $datos['contenido'] = "encriptacion";
+        $this->load->view('templates/frontend/template', $datos);
+        
+    }
 
 }

@@ -45,6 +45,7 @@ $route['articulo/(:any)'] = 'home/detalle_articulo/$1';
 $route['calendario'] = 'home/calendario';
 $route['productos'] = 'productos/lista_productos';
 $route['carrito'] = 'productos/mostrar_carrito';
+$route['encriptacion'] = 'home/encriptacion';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
