@@ -19,6 +19,7 @@
                     <li><?= anchor('productos','Productos')?></li>
                     <li><?= anchor('calendario','Calendario')?></li>
                     <li><?= anchor('encriptacion','Encriptación')?></li>
+                    <li><?= anchor('emails','Enviar emails')?></li>
                 </ul>
             </section>
         </nav>
