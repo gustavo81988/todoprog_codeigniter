@@ -20,6 +20,7 @@
                     <li><?= anchor('calendario','Calendario')?></li>
                     <li><?= anchor('encriptacion','Encriptación')?></li>
                     <li><?= anchor('emails','Enviar emails')?></li>
+                    <li><?= anchor('formularios','Validar Formularios')?></li>
                 </ul>
             </section>
         </nav>

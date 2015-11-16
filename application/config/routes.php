@@ -46,6 +46,8 @@ $route['calendario'] = 'home/calendario';
 $route['productos'] = 'productos/lista_productos';
 $route['carrito'] = 'productos/mostrar_carrito';
 $route['encriptacion'] = 'home/encriptacion';
+$route['validar'] = 'formularios/validar';
+$route['formulario_correcto'] = 'formularios/formulario_correcto';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
