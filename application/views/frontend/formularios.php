@@ -1,20 +1,21 @@
 <article class="contenido">
     <?= validation_errors(); ?>
-    <form method="post" action="<?= base_url(); ?>formularios/validar">
+    <?= form_open('formularios/validar');?>
         <table>
             <tr>
                 <td><label for="nombre"></label>Nombre:</td>
-                <td><input type="text" name="nombre" id="nombre" value="<?=  set_value('nombre');?>"></td>
+                <td><?= form_input( array('name'=>'nombre','id'=>'nombre','value'=>set_value('nombre') ) )?></td>
             </tr>
 
             <tr>
-                <td><label for="email"></label>Correo Electrónico</td>
-                <td><input type="text" name="email" id="email" value="<?=  set_value('email');?>"></td>
+                <td><label for="email"></label>Correo Electrónico:</td>
+                <td><?= form_input( array('name'=>'email','id'=>'email','value'=>set_value('email') ) )?></td>
+
             </tr>
 
             <tr>
                 <td><label for="mensaje">Mensaje:</label></td>
-                <td><textarea name="mensaje" id="mensaje" cols="35" rows="10"><?=  set_value('mensaje');?> </textarea></td>
+                <td><?= form_textarea( array('name'=>'mensaje','id'=>'mensaje','cols'=>'35','rows'=>'10','value'=>set_value('mensaje')) )?></td>
             </tr>
 
             <tr>
@@ -55,5 +56,7 @@
             </tr>
             <td colspan="2"><input type="submit" name="enviar" value="Enviar Mensaje"></td>
         </table>
-    </form>
+    <?= form_close()?>
+    
+    
 </article>

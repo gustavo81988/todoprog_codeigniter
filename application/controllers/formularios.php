@@ -18,10 +18,10 @@ class Formularios extends CI_Controller {
         $rules = array(
             array('field' => 'nombre', 'label' => 'Nombre', 'rules' => 'required|min_length[4]|max_length[10]|alpha'),
             array('field' => 'email', 'label' => 'Correo Eletrónico', 'rules' => 'required|valid_email'),
-//            array('field' => 'mensaje', 'label' => 'Mensaje', 'rules' => 'required'),
-//            array('field' => 'opciones', 'label' => 'Opciones', 'rules' => 'required'),
-//            array('field' => 'colores[]', 'label' => 'Colores', 'rules' => 'required'),
-//            array('field' => 'idiomas', 'label' => 'Idioma', 'rules' => 'required')
+            array('field' => 'mensaje', 'label' => 'Mensaje', 'rules' => ''),
+            array('field' => 'opciones', 'label' => 'Opciones', 'rules' => ''),
+            array('field' => 'colores[]', 'label' => 'Colores', 'rules' => ''),
+            array('field' => 'idiomas', 'label' => 'Idioma', 'rules' => '')
         );
 
         $this->form_validation->set_rules($rules);
