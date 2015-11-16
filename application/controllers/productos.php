@@ -24,7 +24,7 @@ Class Productos extends CI_Controller{
            'qty'=> $this->input->post('cantidad'),
            'price'=> $this->input->post('precio_producto'),
            'name'=> $this->input->post('nombre_producto'),
-           'options'=>$this->input->post('opciones'),
+           'options'=>$opciones,
         );
 
         $this->cart->insert($data);
